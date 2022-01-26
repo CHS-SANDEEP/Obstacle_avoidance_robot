@@ -19,7 +19,10 @@ finds its varied range of applications.
 7. Hobby Gearmotor
 8. Wheels and chassis
 
-# Obstacle_avoidance_robot Circuit and Connections
+# Circuit Diagram and Connections
 
 ![Circuit](https://user-images.githubusercontent.com/72753742/151205321-c784db76-d8c1-4b51-b69f-849f93873820.png)
 
+# Working of Obstacle_avoidance_robot
+
+link: https://www.tinkercad.com/things/6PjwVYIpDus-obstacleavoidancerobot/editel?sharecode=14UjS0d2qvZ0ysSixOk_kaozfH_a12XFJoXUY3nWC1Y
