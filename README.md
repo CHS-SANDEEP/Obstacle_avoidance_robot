@@ -1,4 +1,4 @@
-# obstacle_avoidance_robot
+# Obstacle_avoidance_robot
 
 This project developed an obstacle avoiding robot
 which can move without any collision by sensing obstacles on its
