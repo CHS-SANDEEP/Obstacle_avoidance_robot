@@ -14,6 +14,7 @@ finds its varied range of applications.
 2. Ultrasonic sensor
 3. IR sensor
 4. HC-05 Bluetooth Module
-5. L293D motor driver
-6. Hobby Gearmotor
-7. Wheels and chassis
+5. Servo Motor
+6. L293D motor driver
+7. Hobby Gearmotor
+8. Wheels and chassis
