@@ -1,34 +1,41 @@
 const int trig = 7;
 const int echo = 6;
+
 const int leftFrwrd = 5;
 const int leftBack = 4;
 const int rightFrwrd = 2;
 const int rightBack = 3;
 float duration = 0;
+
 float distance = 0;
 
 String voice;
 
 #include<Servo.h>
+
 #define IR A5
+
 Servo myservo;
 void setup() 
 {
   pinMode(trig , OUTPUT);
   pinMode(echo , INPUT);
+  
   pinMode(IR, INPUT);
+  
   pinMode(leftFrwrd , OUTPUT);
   pinMode(leftBack , OUTPUT);
   pinMode(rightFrwrd , OUTPUT);
   pinMode(rightBack , OUTPUT);
+  
   myservo.attach(8);
   myservo.write(90);
  
   Serial.begin(9600);
 
 }
-void loop()
-{
+void loop(){
+  
 while(Serial.available()) {
   voice = "";  
   voice = Serial.readString();
@@ -46,15 +53,20 @@ while(Serial.available()) {
   distance = (duration*0.034/2);
   Serial.print("Distance: ");
   Serial.println(distance);
+  
   if(distance > 40){  
    if(voice == "move forward"){
     forward();
+     
   }else if(voice == "move backward"){
     backward();
+     
   }else if(voice == "turn left"){
     left();
+     
   }else if(voice == "turn right"){
     right();
+     
   }else if(voice == "stop") {
     stop();
   }
@@ -92,11 +104,13 @@ void forward(){
     delay(1000);
     myservo.write(90);
     delay(500);
+   
     digitalWrite(leftFrwrd , LOW);
     digitalWrite(leftBack , HIGH);
     digitalWrite(rightFrwrd , HIGH);
     digitalWrite(rightBack ,LOW );
     delay(1000);
+   
     digitalWrite(leftFrwrd , HIGH);
     digitalWrite(leftBack , LOW);
     digitalWrite(rightFrwrd , HIGH);
@@ -108,11 +122,13 @@ void forward(){
      delay(1000);
      myservo.write(90);
      delay(500);
+   
     digitalWrite(leftFrwrd , HIGH);
     digitalWrite(leftBack , LOW);
     digitalWrite(rightFrwrd , LOW);
     digitalWrite(rightBack ,HIGH );
     delay(1000);
+   
     digitalWrite(leftFrwrd , HIGH);
     digitalWrite(leftBack , LOW);
     digitalWrite(rightFrwrd , HIGH);
