@@ -18,3 +18,8 @@ finds its varied range of applications.
 6. L293D motor driver
 7. Hobby Gearmotor
 8. Wheels and chassis
+
+# Obstacle_avoidance_robot Circuit and Connections
+
+![Circuit](https://user-images.githubusercontent.com/72753742/151205321-c784db76-d8c1-4b51-b69f-849f93873820.png)
+
